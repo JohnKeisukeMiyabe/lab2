@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Keisuke Region</title>
 	<link rel="icon" type="image/x-icon" href="images/statueoftheseven.png">
 	<style>
+		* {
+  	box-sizing: border-box;
+	}
+
+	.header {
+  	padding: 20px;
+  	text-align: center;
+	}
+
+	.column {
+  	float: left;
+  	width: 33.33%;
+  	padding: 15px;
+	}
+
+	.row::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+	}
+
+	@media screen and (max-width:600px) {
+  	.column {
+    	width: 100%;
+  	}
+	}
 	body {
-  	background-image: url("images/inazuma.jpg");
+  	background-image: url("images/monstadt.jpg");
 		background-size: cover;
+		margin: 0;
 	}
 	h1, h2, p, li {
   	color: white;
@@ -28,11 +55,15 @@
 
 	<!-- My Personal Info -->
 
-  <h1><center>My Personal Information</center></h1>
-  <img src="images/pic.jpg" alt="My Picture" id="img" width="250px" height="250px;">
-  <center><p class="anothercolor"><strong>Name:</strong> John Keisuke Miyabe</b></p>
-  <p><strong>Nickname:</strong> Ken</p></center>
-  <section>
+  <div class="header">
+  	<h1><center>My Personal Information</center></h1>
+  	<img src="images/pic.jpg" alt="My Picture" id="img" width="250px" height="250px;">
+  	<center><p class="anothercolor"><strong>Name:</strong> John Keisuke Miyabe</b></p>
+  	<p><strong>Nickname:</strong> Ken</p></center>
+  </div>
+
+  <div class="row">
+  	<div class="column">
     <h2 class="anothercolor">Personal Details</h2>
     <ul>
       <li><strong>Age:</strong> 19</li>
@@ -50,11 +81,9 @@
 	  my hobbies which is gaming. Also I want to know more about 
 	  programming and this course also offers careers with high salaries.</li>
     </ul>
-  </section>
-
+    </div>
   <!-- My experience and interests -->
-
-  <section>
+  <div class="column">
     <h2>Experience and Interests</h2>
     <ul>
       <li><strong>I.T. Experience:</strong> I have a background 
@@ -86,20 +115,18 @@
 	  table tennis competition. I won many medals and also participated to 
 	  regional level.</li>
     </ul>
-  </section>
+    </div>
 
   <!-- Additional infos about myself -->
-
-  <section>
+  <div class="column">
     <h2>Picture to share about Myself</h2>
     <img src="images/gojo.jpg" alt="Gojo Satoru" width="200px" height="200px">
-	<img src="images/yuta.jpg" alt="Yuta Okkotsu" width="200px" height="200px">
-	<p>The following pictures are Gojo Satoru (left) and Yuta Okkotsu (right). 
-	These two are one of the strongest jujutsu sorcerers in the anime Jujutsu Kaisen. 
-	These two have unrivaled strength and they are also one of my favorite anime characters. 
-	Their abilities are powerful, and they are graded as special grade sorcerers. 
-	I love watching anime especially Jujutsu Kaisen and I am also reading the Jujutsu Kaisen manga.
-  </section>
-
+		<img src="images/yuta.jpg" alt="Yuta Okkotsu" width="200px" height="200px">
+		<p>The following pictures are Gojo Satoru (left) and Yuta Okkotsu (right). 
+		These two are one of the strongest jujutsu sorcerers in the anime Jujutsu Kaisen. 
+		These two have unrivaled strength and they are also one of my favorite anime characters. 
+		Their abilities are powerful, and they are graded as special grade sorcerers. 
+		I love watching anime especially Jujutsu Kaisen and I am also reading the Jujutsu Kaisen manga.
+	</div>
 </body>
 </html>
