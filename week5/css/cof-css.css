@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+  }
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  body {
+    background-image: url("../images/courtofFontaine.png");
+      background-size: cover;
+      margin: 0;
+      overflow-x: hidden;
+  }
+  h1, h2, p, li {
+    color: white;
+      font-family: verdana;
+  }
+  .anothercolor {
+      color: white;
+  }
+  #img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  div#waypoints {
+    background-image: url("../images/navbar.png");
+    background-size:contain;
+    display: flex;
+    gap:4vw;
+    justify-content:center;
+    width: 100vw;
+    min-width: 100vw;
+    height: 7.8vw;
+    min-height:9.7;
+    position: sticky;
+    top:0;
+    padding-bottom: -1vw;
+    z-index:3;
+    font-family:Cabriole;
+    font-weight: bold;
+}
+
+div#waypoints img{
+    width: 6vw;
+}
+
+div#waypoints a{
+    Color: white;
+    text-decoration: none;
+    font-size:1.3vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    text-align: center;
+}
+
+a#teleportwaypoint{
+    display: flex;
+    flex-direction: column;
+}
+
+div#statueoftheseven img{
+    width:10vw;
+}
+
+div#statueoftheSeven {
+    float:center;
+    z-index:4;
+}
+
+img#newstatueoftheseven:hover{
+    width:12.3vw;
+}
+
+div#left{
+    float: left;
+    display: flex;
+}
+
+div#left img:hover{
+    width:7vw;
+}
+
+div#left p{
+    margin-top: -0.15vw;
+    background-color: blue;
+    border-radius: 25px;
+}
+
+
+div#right{
+    float:right;
+    display: flex;
+}
+
+div#right p{
+    margin-top: -0.15vw;
+    background-color:blue;
+    border-radius: 25px;
+}
+
+div#right img:hover{
+    width:7vw;
+}
